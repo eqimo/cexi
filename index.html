@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Bag Factory</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/lightbox.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="icon" href="images/bagicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <video autoplay muted playsinline>
+        <source src="animations/cover.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </header>
+
+    <nav>
+      <div id="switchLanguageButtons">
+        <button onclick="switchLanguage('en')">
+          <img src="images/flag1.webp" />
+        </button>
+        <button onclick="switchLanguage('ka')">
+          <img src="images/flag2.webp" />
+        </button>
+      </div>
+      <div id="mainNav">
+        <a href="#header-4" id="nav-a-1">გალერეა</a>
+        <a href="#ourservice" id="nav-a-2">ჩვენს შესახებ</a>
+        <a href="#header-3" id="nav-a-3">კონტაქტი</a>
+      </div>
+    </nav>
+
+    <section class="bagCarousel">
+      <div class="carousel" data-flickity='{"autoPlay": true}'>
+        <div class="carousel-cell">
+          <img src="bagphotos/bwb.png" alt="Image 1" />
+        </div>
+        <div class="carousel-cell">
+          <img src="bagphotos/bwb3.png" alt="Image 2" />
+        </div>
+        <div class="carousel-cell">
+          <img src="bagphotos/bwb5.png" alt="Image 3" />
+        </div>
+        <div class="carousel-cell">
+          <img src="bagphotos/bwb6.png" alt="Image 4" />
+        </div>
+        <div class="carousel-cell">
+          <img src="bagphotos/bwb7.png" alt="Image 5" />
+        </div>
+        <div class="carousel-cell">
+          <img src="bagphotos/bwb4.png" alt="Image 5" />
+        </div>
+        <div class="carousel-cell">
+          <img src="bagphotos/bwb8.png" alt="Image 5" />
+        </div>
+        <div class="carousel-cell">
+          <img src="bagphotos/bwb9.png" alt="Image 5" />
+        </div>
+      </div>
+    </section>
+
+    <section id="ourservice">
+      <img class="bagmakingphoto" src="bagphotos/bagmaking.webp" />
+      <div class="ourservicetext">
+        <h2 id="header">ჩვენი სერვისი</h2>
+        <p id="para-1">
+          მოგესალმებით, ჩვენ ვართ გამოცდილი ჯგუფი, რომელიც ორიენტირებულია ჩანთის
+          შექმნაზე. ჩვენ გთავაზობთ, როგორც ქალის ხელჩანთის, ასევე სხვადასხვა
+          ტიპის ჩანთების დამზადებას. ვამზადებთ ნებისმიერი მატერიის, სირთულისა და
+          ხარისხის შეკვეთებს.
+        </p>
+        <button
+          class="showmorebutton"
+          id="showmorebutton"
+          onclick="toggleList()"
+        >
+          მეტის ჩვენება
+        </button>
+        <ul id="mainlist" style="display: none">
+          <li id="li-1">
+            თქვენ გვიყვებით რა მატერიალის, დანიშნულების ან გამძლეობის ჩანთა
+            გინდათ, ჩვენ ვკერავთ.
+          </li>
+          <li id="li-2">გეხმარებით სასურველი დიზაინის შექმნაში.</li>
+          <li id="li-3">
+            ვქმნით ინდივიდუალურ ხელჩანთებს სხვადასხვა მაღაზიებისთვის.
+          </li>
+          <li id="li-4">
+            ვამზადებთ გამძლე პროფესიულ-სპეციფიკურ ჩანთებს კომპანიებისთვის.
+          </li>
+          <li id="li-5">შეგვიძლია ვაწარმოოთ კვირაში 500 ჩანთა</li>
+        </ul>
+
+        <button
+          class="showlessbutton"
+          id="showlessbutton"
+          onclick="toggleList()"
+        >
+          ნაკლების ჩვენება
+        </button>
+        <button class="contactbutton" id="contactButton">კონტაქტი</button>
+      </div>
+    </section>
+    <section id="ourservice">
+      <div class="ourservicetext">
+        <h2 id="header-2">რატომ უნდა აირჩიოთ ჩვენი სამკერვალო?</h2>
+        <p id="para-2">
+          ჩვენი წარმატების გასაღები არის მუდმივი შრომა და ფოკუსირება კლიენტის
+          კმაყოფილებაზე.
+        </p>
+        <p id="para-3">
+          ამის განხორციელებაში წვლილი შეაქვს ჩვენი ჯგუფის თითოეულ გამოცდილ
+          თანამშრომელს.
+        </p>
+        <p id="para-4">
+          ჩვენი საამქრო 25 წელია ამზადებს ჩანთებს და სტაბილურად გვიკავია ადგილი
+          ქართულ ბაზარზე .
+        </p>
+        <p id="para-5">
+          ჩვენ ვთანამშრომლობთ სხვადასხვა მაღაზიებთან და კომპანიებთან
+          საქართვველოს მასშტაბით.
+        </p>
+      </div>
+      <img class="bagmakingphoto" src="bagphotos/bagmaking2.webp" />
+    </section>
+    <section id="ourservice">
+      <img class="bagmakingphoto" src="bagphotos/bagmaking3.webp" />
+      <div class="ourservicetext">
+        <h2 id="header-3">კონტაქტი</h2>
+
+        <p id="para-6">
+          შეგიძლიათ დაგვიკავშირდეთ ტელეფონის მეშვეობით, ან მოგვწეროთ ან
+          გვეწვვიოთ ჩანთების საამქროში
+        </p>
+        <ul>
+          <li id="li-6">
+            ტელ:
+            <span id="telephoneNumber" onclick="copyToClipboard()">
+              593470591</span
+            >
+          </li>
+          <li id="li-7">
+            იმეილი: <span id="email-1">laberadze@96gmail.com</span>
+          </li>
+          <li id="li-8">ან მოგვწერეთ ამ საიტზე</li>
+        </ul>
+        <div id="toast"></div>
+        <button class="messagebutton" id="messagebutton">
+          წერილის გაგზავნა
+        </button>
+      </div>
+      <iframe
+        id="mapLocation"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508.1026573327718!2d44.922111737614806!3d41.69399844387632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404411fec79609e9%3A0xf10fc4a422c0e133!2s6%2F3%20Giorgi%20Mukhadze%20St%2C%20T&#39;bilisi!5e1!3m2!1sen!2sge!4v1701419239249!5m2!1sen!2sge"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <h2 id="header-4">ჩვენი გალერეა</h2>
+    <div class="gallery">
+      <a href="bagphotos/bag1.jpg" data-lightbox="mygallery">
+        <img src="bagphotos/bag1.jpg"
+      /></a>
+      <a href="bagphotos/bag2.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag2.jpg"
+      /></a>
+      <a href="bagphotos/bag3.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag3.jpg"
+      /></a>
+      <a href="bagphotos/bag4.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag4.jpg"
+      /></a>
+      <a href="bagphotos/bag5.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag5.jpg"
+      /></a>
+      <a href="bagphotos/bag6.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag6.jpg"
+      /></a>
+      <a href="bagphotos/bag7.jpeg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag7.jpeg"
+      /></a>
+      <a href="bagphotos/bag8.jpeg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag8.jpeg"
+      /></a>
+      <a href="bagphotos/bag9.jpeg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag9.jpeg"
+      /></a>
+      <a href="bagphotos/bag10.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag10.jpg"
+      /></a>
+      <a href="bagphotos/bag11.jpg" data-lightbox="mygallery">
+        <img src="bagphotos/bag11.jpg"
+      /></a>
+      <a href="bagphotos/bag12.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag12.jpg"
+      /></a>
+      <a href="bagphotos/bag13.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag13.jpg"
+      /></a>
+      <a href="bagphotos/bag14.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag14.jpg"
+      /></a>
+      <a href="bagphotos/bag15.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag15.jpg"
+      /></a>
+      <a href="bagphotos/bag16.jpeg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag16.jpeg"
+      /></a>
+      <a href="bagphotos/bag17.jpeg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag17.jpeg"
+      /></a>
+      <a href="bagphotos/bag18.jpeg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag18.jpeg"
+      /></a>
+      <a href="bagphotos/bag19.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag19.jpg"
+      /></a>
+      <a href="bagphotos/bag20.jpg" data-lightbox="mygallery"
+        ><img src="bagphotos/bag20.jpg"
+      /></a>
+    </div>
+    <form action="/submit" method="post" id="form">
+      <label id="form-name" class="shortbox" for="name">სახელი:</label>
+      <input class="shortbox" type="text" name="name" required />
+
+      <br />
+
+      <label id="form-mail" for="email">იმეილი:</label>
+      <input class="shortbox" type="email" name="email" required />
+
+      <br />
+
+      <label id="form-msg" for="message">წერილი:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input id="form-submit" type="submit" value="გაგზავნა" />
+    </form>
+    <footer>
+      <p>&copy; 2023 Old Bag Factory. All rights reserved.</p>
+      <div class="footernav">
+        <a href="#our-gallery">gallery</a>
+        <a href="#about-us">About Us</a>
+        <a href="#contact-us">Contact</a>
+      </div>
+    </footer>
+    <script src="scripts/translationsDATA.js"></script>
+    <script src="scripts/server.js"></script>
+    <script src="scripts/lightbox-plus-jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/express@4.17.1/dist/express.min.js"></script>
+  </body>
+</html>
