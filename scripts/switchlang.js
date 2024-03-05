@@ -21,9 +21,8 @@ function switchLanguage(lang) {
   var liC = document.getElementById("li-3");
   var liD = document.getElementById("li-4");
   var liE = document.getElementById("li-5");
-  var liF = document.getElementById("li-6");
-  var liG = document.getElementById("li-7");
   var liH = document.getElementById("li-8");
+  var liI = document.getElementById("li-9");
 
   if (lang === "en") {
     navA.innerHTML = "gallery";
@@ -56,9 +55,9 @@ function switchLanguage(lang) {
     liD.innerHTML =
       "We specialize in crafting durable, professional-specific bags for companies.";
     liE.innerHTML = "we can produce 500 bag per week";
-    liF.innerHTML = "tel:";
-    liG.innerHTML = "e-mail:";
-    liH.innerHTML = "or send message on this web-site";
+    liH.innerHTML = "or contact us on messenger";
+    liI.innerHTML =
+      "Prices start at 8₾ for grocery bags, 18₾ for small bags, and 25₾ for big handbags. The prices vary based on the quantity of bags you wish to order.";
   } else if (lang === "ka") {
     navA.innerHTML = "გალერეა";
     navB.innerHTML = "ჩვენს შესახებ";
@@ -90,8 +89,8 @@ function switchLanguage(lang) {
     liD.innerHTML =
       "ვამზადებთ გამძლე პროფესიულ-სპეციფიკურ ჩანთებს კომპანიებისთვის.";
     liE.innerHTML = "შეგვიძლია ვაწარმოოთ კვირაში 500 ჩანთა";
-    liF.innerHTML = "ტელ:";
-    liG.innerHTML = "იმეილი:";
-    liH.innerHTML = "ან მოგვწერეთ ამ საიტზე";
+    liH.innerHTML = "ან მოგვწერეთ მესენჯერში";
+    liI.innerHTML =
+      "ფასები იწყება 8 ₾-დან სასურსათო ჩანთებზე, პატარა ზომის ჩანთების-18 ₾-დან, დიდი ზომის-25 ₾-დან. ფასები დამოკიდებულია შეკვეთილი ჩანთების რაოდენობაზე";
   }
 }
