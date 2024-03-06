@@ -15,7 +15,7 @@ function toggleList() {
 }
 // NUMBER COPY
 function copyToClipboard() {
-  var phoneNumber = document.getElementById("telephoneNumber").innerText;
+  var phoneNumber = document.getElementById("li-6a").innerText;
   var tempTextArea = document.createElement("textarea");
   tempTextArea.value = phoneNumber;
   document.body.appendChild(tempTextArea);
